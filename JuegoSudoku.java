@@ -207,7 +207,7 @@ public class JuegoSudoku extends JFrame {
         if (esNumeroValido(n, casillapresionada.getColumna(), casillapresionada.getFila())) {
             casillapresionada.setnumeroActual(n);
             numerosColocados++;
-            verificarWin();
+            verificarGanador();
         } else {
             JOptionPane.showMessageDialog(this, "ERROR. El numero esta repetido.", "ERROR", JOptionPane.ERROR_MESSAGE);
         };
